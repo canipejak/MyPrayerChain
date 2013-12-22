@@ -24,6 +24,7 @@ module.exports = function(grunt) {
 
     watch: {
       options: {
+        debounceDelay: 2500,
         livereload: true,
       },
       css: {
@@ -31,15 +32,7 @@ module.exports = function(grunt) {
         tasks: ['sass'],
         options: {
           spawn: false,
-        }
-      }
-    },
-
-    connect: {
-      server: {
-        options: {
-          port: 9000,
-          base: './'
+          livereload: true,
         }
       }
     },
@@ -53,6 +46,5 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['uglify', 'sass']);
-  grunt.registerTask('dev', ['connect', 'watch']);
 
 };
