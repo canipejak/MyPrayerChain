@@ -11,18 +11,11 @@
 </head>
 
 <body>
-<<<<<<< HEAD:index.php
-<?php 
 
-echo "hello world!";
-
-?>
-hello? lets see again and again!..
-=======
 <?php
 echo "Hello World!</br>";
 ?>
 This is a php page :)
->>>>>>> Testing:index.php
+
 </body>
 </html>
